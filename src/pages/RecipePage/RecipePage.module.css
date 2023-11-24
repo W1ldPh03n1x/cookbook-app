@@ -1,0 +1,12 @@
+._ {
+}
+
+._description {
+}
+
+._ingredients {
+	&,
+	& > li {
+		list-style: disc inside;
+	}
+}

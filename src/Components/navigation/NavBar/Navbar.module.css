@@ -1,0 +1,25 @@
+._ {
+	padding: 0;
+}
+
+._list {
+	display: flex;
+	gap: 32px;
+}
+
+._list > li {
+	/* margin: 0 16px; */
+	cursor: pointer;
+}
+
+._list > li:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	display: flex;
+	gap: 36px;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}

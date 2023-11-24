@@ -1,0 +1,16 @@
+.content {
+	margin: auto;
+	padding: 0 32px;
+}
+
+.content__small {
+	max-width: 1000px;
+}
+
+.content__medium {
+	max-width: 1400px;
+}
+
+.content__large {
+	max-width: 1800px;
+}

@@ -1,0 +1,20 @@
+:root {
+	--primary-white: #fffcf2;
+	--secondary-white: #ccc;
+
+	/* --primary-gray: #888; */
+	--primary-gray: #ccc;
+	--secondary-gray: #888;
+
+	--primary-dark: #222222;
+	--accent-color: #eb5e28;
+
+	--background-black: #111111;
+	--background-black: #fff;
+
+	/* --text-color-white: var(--primary-white); */
+	--text-color-white: #eeeeee;
+	--text-color-black: var(--primary-dark);
+
+	--shadow-dark-color: rgba(0, 0, 0, 0.2);
+}

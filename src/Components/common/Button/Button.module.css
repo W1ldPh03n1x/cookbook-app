@@ -1,0 +1,12 @@
+._ {
+	height: 36px;
+	padding: 8px 12px;
+	border-radius: 8px;
+}
+
+._filled {
+	background: var(--primary-gray);
+	&:hover {
+		box-shadow: 0 0 12px 1px var(--secondary-gray);
+	}
+}
