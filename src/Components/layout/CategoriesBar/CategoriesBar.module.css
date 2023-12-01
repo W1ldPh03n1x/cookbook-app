@@ -1,0 +1,28 @@
+._ {
+	max-width: 240px;
+	width: 100%;
+	flex-grow: 1;
+	margin-right: var(--spacing-l);
+}
+
+._list {
+	padding: 0 0 0 var(--spacing-xs);
+
+	width: 100%;
+}
+
+._wrapper {
+	top: var(--header-layout-pacing);
+	position: sticky;
+}
+
+._item {
+	transition: 0.1s;
+
+	padding: 8px 12px;
+	border-radius: var(--border-radius-m);
+
+	&:hover {
+		background-color: var(--primary-gray);
+	}
+}

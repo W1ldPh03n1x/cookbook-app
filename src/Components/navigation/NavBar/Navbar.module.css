@@ -4,7 +4,7 @@
 
 ._list {
 	display: flex;
-	gap: 32px;
+	gap: var(--spacing-m);
 }
 
 ._list > li {
@@ -18,7 +18,7 @@
 
 .wrapper {
 	display: flex;
-	gap: 36px;
+	gap: var(--spacing-l);
 	align-items: center;
 	justify-content: space-between;
 	height: 100%;

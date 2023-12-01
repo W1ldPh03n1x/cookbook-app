@@ -1,16 +1,16 @@
-.content {
+._ {
 	margin: auto;
-	padding: 0 32px;
+	padding: 0 var(--spacing-m);
+	height: 100%;
 }
 
-.content__small {
-	max-width: 1000px;
+._small {
+	max-width: 800px;
+}
+._medium {
+	max-width: 1200px;
 }
 
-.content__medium {
-	max-width: 1400px;
-}
-
-.content__large {
-	max-width: 1800px;
+._large {
+	max-width: 1600px;
 }

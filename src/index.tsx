@@ -10,6 +10,10 @@ import { BrowserRouter } from "react-router-dom";
 import * as Redux from "react-redux";
 import store from "./store";
 import RecipePage from "./pages/RecipePage/RecipePage";
+import CategoriesPage from "./pages/CategoriesPage";
+import CuisinesPage from "./pages/CuisinesPage";
+import RecipeEditPage from "./pages/RecipePage/RecipeEditPage";
+import SearchPage from "./pages/SearchPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
@@ -21,16 +25,27 @@ const router = createBrowserRouter([
 			{
 				path: "recipes/*",
 				children: [
-					{ index: true, element: <div>recipes all</div> },
-					{ path: "add", element: <div>recipes add</div> },
+					{ index: true, element: <CategoriesPage /> },
+					{ path: "add", element: <RecipeEditPage add /> },
 					{ path: ":id", element: <RecipePage /> },
+					{ path: ":id/edit", element: <RecipeEditPage /> },
 				],
 			},
+			{
+				path: "cuisine/*",
+				children: [
+					{ index: true, element: <CuisinesPage /> },
+					{
+						path: ":id",
+						element: <CategoriesPage specific />,
+					},
+				],
+			},
+			{ path: "search/:query", element: <SearchPage /> },
 		],
 	},
 	{
 		path: "admin/*",
-		element: <div>edit</div>,
 		children: [
 			{ index: true, element: <div>edit index</div> },
 			{ path: ":id", element: <div>edit id</div> },
@@ -39,11 +54,11 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
+	// <React.StrictMode>
 	<Redux.Provider store={store}>
-		<React.StrictMode>
-			<RouterProvider router={router} />
-		</React.StrictMode>
+		<RouterProvider router={router} />
 	</Redux.Provider>,
+	// </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

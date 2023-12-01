@@ -1,0 +1,31 @@
+._ {
+	padding: 0 var(--spacing-m);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: var(--spacing-m);
+}
+
+.card {
+	width: 520px;
+	background-color: var(--secondary-white);
+	border-radius: var(--border-radius-l);
+
+	&:hover {
+		box-shadow: 0 0 12px 2px var(--shadow-dark-color);
+	}
+
+	transition: 0.2s;
+}
+
+.card__title {
+	margin-bottom: var(--spacing-s);
+	& > span {
+		font-size: 32px;
+		font-weight: bold;
+	}
+}
+
+.card__wrapper {
+	padding: var(--spacing-xs) var(--spacing-s) var(--spacing-s);
+}

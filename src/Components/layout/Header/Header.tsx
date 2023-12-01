@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../navigation/NavBar/NavBar";
 import Search from "../../Search/Search";
-import Container from "../../common/Container/Container";
+import Container from "../Main/Main";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../../../hooks/reduxHooks";
 import SignUp from "../../SignUp/SignUp";

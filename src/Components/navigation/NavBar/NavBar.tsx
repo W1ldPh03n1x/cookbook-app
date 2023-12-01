@@ -12,16 +12,10 @@ const NavBar = () => {
 			<nav className={style["_"]}>
 				<ul className={style["_list"]}>
 					<li>
-						<Link to="/recipes/">Все блюда</Link>
+						<Link to="/recipes/">Все рецепты</Link>
 					</li>
 					<li>
-						<a>Категории</a>
-					</li>
-					<li>
-						<a>Кухни</a>
-					</li>
-					<li>
-						<a>Случайное</a>
+						<Link to="/cuisine/">Кухни</Link>
 					</li>
 					{isAuth && (
 						<li>
@@ -30,13 +24,8 @@ const NavBar = () => {
 					)}
 				</ul>
 			</nav>
-			{isAuth ? (
-				<Link to={"/admin"}>
-					<Button>Админка</Button>
-				</Link>
-			) : (
-				<SignUp />
-			)}
+
+			<SignUp />
 		</div>
 	);
 };

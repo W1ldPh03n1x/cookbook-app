@@ -16,8 +16,12 @@
 	/* color: var(--text-color-white); */
 	color: var(--text-color-black);
 	/* outline-color: var(--primary-white); */
-	outline-color: var(--primary-dark);
+	outline-color: var(--secondary-gray);
 	/* outline-width: 1px; */
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +38,8 @@ h5,
 h6 {
 	font-family: "Roboto Slab", serif;
 
+	font-weight: 500;
+
 	margin-bottom: 0.75em;
 	&::first-letter {
 		text-transform: uppercase;
@@ -42,6 +48,7 @@ h6 {
 
 h1 {
 	font-size: 48px;
+	font-weight: bold;
 }
 
 h2 {

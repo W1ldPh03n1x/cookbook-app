@@ -1,11 +1,11 @@
 ._ {
 	background: var(--primary-gray);
+	border: 1px solid var(--primary-gray);
 	height: 36px;
 	padding: 12px;
 	margin: 0 16px;
-	/* padding-left: 32px; */
 	font-size: 16px;
-	border-radius: 8px;
+	border-radius: var(--border-radius-m);
 	max-width: 400px;
 
 	&::-webkit-input-placeholder {
@@ -13,6 +13,7 @@
 		/* color: #ccc; */
 	}
 	&:focus {
-		outline: auto;
+		outline: node;
+		border: 1px solid var(--focus-outline-color);
 	}
 }

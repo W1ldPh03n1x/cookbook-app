@@ -1,0 +1,32 @@
+._list {
+	padding-left: var(--spacing-xs);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xxs);
+}
+
+._item__name {
+	font-weight: 600;
+}
+
+._item {
+	display: flex;
+	/* gap: var(--spacing-s); */
+	justify-content: space-between;
+
+	& > button {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+._item__specifics {
+	padding-left: var(--spacing-xs);
+	display: flex;
+	gap: var(--spacing-s);
+
+	& > span:first-child {
+		transform: scale(-1, 1);
+	}
+}

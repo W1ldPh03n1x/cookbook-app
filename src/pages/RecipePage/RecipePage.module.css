@@ -1,12 +1,156 @@
 ._ {
 }
 
-._description {
+._name--editing {
+	padding: var(--spacing-xxxs) var(--spacing-xxs);
+	border-bottom: 1px solid var(--secondary-gray);
 }
 
-._ingredients {
-	&,
+._edit_button {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--secondary-gray);
+
+	& > span {
+		color: var(--secondary-gray);
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+._edit_button__wrapper {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	height: 100%;
+}
+
+._about {
+	background-color: var(--secondary-white);
+	padding: var(--spacing-s) var(--spacing-m) var(--spacing-m);
+	border-radius: var(--border-radius-xl);
+}
+
+._about__heading {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: var(--spacing-s);
+}
+._about__wrapper {
+	display: flex;
+	gap: var(--spacing-m);
+
+	& > * {
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+._required__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+._cooking_time {
+	font-weight: 600;
+	margin-top: var(--spacing-s);
+
+	& > strong {
+		font-size: 18px;
+		color: var(--secondary-gray);
+	}
+}
+._cooking_time__duration {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+._cooking_time__duration--editing {
+	padding: var(--spacing-xxxs) var(--spacing-xxs);
+	border-bottom: 1px solid var(--secondary-gray);
+}
+
+._required__list {
+	padding-left: var(--spacing-xs);
+	/* &,
 	& > li {
 		list-style: disc inside;
+	} */
+}
+
+._includes__list {
+	padding-left: var(--spacing-xs);
+	/* &,
+	& > li {
+		list-style: disc inside;
+	} */
+}
+
+._description--editing {
+	width: 100%;
+	border: 1px solid var(--secondary-gray);
+
+	padding: var(--spacing-xxs);
+
+	border-radius: var(--border-radius-l);
+	&:focus {
+		outline: none;
+		border: 2px solid var(--text-color-black);
 	}
+}
+
+._recipe--editing {
+	width: 100%;
+	border: 1px solid var(--secondary-gray);
+
+	padding: var(--spacing-xxs);
+
+	border-radius: var(--border-radius-l);
+	&:focus {
+		outline: none;
+		border: 2px solid var(--text-color-black);
+	}
+}
+
+._add_ingredient__wrapper {
+	margin-top: var(--spacing-s);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xs);
+}
+
+._add_ingredient__info {
+	& > span {
+		display: flex;
+		gap: var(--spacing-xs);
+	}
+	& input {
+		padding: var(--spacing-xxxs) var(--spacing-xxs);
+		border-bottom: 1px solid var(--secondary-gray);
+	}
+}
+
+._add_ingredient__specifics {
+	padding-left: var(--spacing-xs);
+	display: flex;
+	gap: var(--spacing-s);
+
+	& > span:first-child {
+		transform: scale(-1, 1);
+	}
+
+	& input {
+		width: 72px;
+	}
+}
+
+#ingredient_quantity {
+	width: 72px;
+}
+
+#ingredient_measure_unit {
+	width: 96px;
 }
