@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Рецепт-мастер на React и TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## О проекте
 
-## Available Scripts
+Высокофункциональное приложение для управления рецептами блюд и блюд, созданное с использованием технологий React и TypeScript. Приложение предлагает полный набор функций для добавления, редактирования, удаления рецептов, а также добавления и удаления ингредиентов в рецепты. Кроме того, пользователи могут проводить поиск рецептов по названию или ингредиентам.
 
-In the project directory, you can run:
+## Функционал
 
-### `npm start`
+-   **Добавление рецептов:** Пользователи могут создавать свои собственные рецепты, вводя информацию об ингредиентах, процессе приготовления и имя блюда.
+-   **Удаление рецептов:** Пользователи имеют возможность удалить любой рецепт из своей коллекции, если он уже был приготовлен или перешел в архив.
+-   **Редактирование рецептов:** Приложение позволяет пользователям изменять информацию о рецепте, включая имя, ингредиенты и процесс приготовления, чтобы всегда сохранять актуальную информацию.
+-   **Добавление и удаление ингредиентов:** При создании или редактировании рецепта, пользователи могут добавлять и удалять ингредиенты, используя список ингредиентов, который может быть разделен на категории (например, овощи, мясо, морепродукты и т. д.).
+-   **Поиск рецептов:** Приложение предоставляет возможность поиска рецептов по имени блюда, ингредиентам или категориям. Пользователи могут найти то, что им нужно, быстро и легко.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Технологии и инструменты
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   **React:** Является основной библиотекой для создания интерфейса пользователя и управления состоянием приложения.
+-   **TypeScript:** Улучшает надежность и поддерживаемость кода, предоставляя статический типизацию и более строгую типизацию.
+-   React Router: Упрощает навигацию по приложению и обеспечивает управление различными страницами и компонентами.
+-   **CSS:** Используется для стилизации интерфейса и создания отзывчивого дизайна.
+-   **Redux ToolKit:** Обеспечивает управление состоянием приложения на уровне всей системы, обеспечивая надежность и масштабируемость.
+-   **React Router DOM:** Позволяет реализовать удобный переход между экранами приложения без перезагрузки страницы.
+-   **Axios:** добная обертка над fetch для запросов к беку.
 
-### `npm test`
+## Демонстрация
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Общий вид**
+[!Demo](./demo/2024-04-17_10-02-43.png)
+[!Demo](./demo/2024-04-17_10-03-29.png)
 
-### `npm run build`
+**Кухни**
+[!Demo](./demo/2024-04-17_10-03-52.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Страница рецепта**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[!Demo](/demo/2024-04-17_10-04-43.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Редактирование_
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[!Demo](/demo/2024-04-17_10-05-31.png)
